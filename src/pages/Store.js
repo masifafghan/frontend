@@ -17,6 +17,9 @@ function Store() {
                   <li className="nav-item">
                     <Link className="nav-link text-white" to="/store">Store</Link>
                   </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-white" to="/about">About</Link>
+                  </li>
                 </ul>
                 <span className="navbar-brand m-auto text-white">Sentiments</span>
               </div>
