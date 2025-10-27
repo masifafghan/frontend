@@ -5,9 +5,9 @@ function Home() {
   return (
     <div style={styles.container}>
       <header style={styles.hero}>
-        <h1 style={styles.title}>Welcome to Sentiments Electronics ⚡</h1>
+        <h1 style={styles.title}>Welcome to Sentiments </h1>
         <p style={styles.subtitle}>
-          Discover the latest gadgets, mobile phones, and accessories — all in one place!
+          Discover the latest Sentiments, Men's Fragrance , and all kind of Perfum's — all in one place!
         </p>
         <Link to="/store" style={styles.button}>
           Shop Now

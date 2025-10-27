@@ -4,21 +4,18 @@ import { useCart } from "../context/CartContext";
 const sampleProducts = [
   {
     id: 1,
-    name: "Samsung Galaxy S23",
-    price: 120000,
-    image: "https://via.placeholder.com/150",
+    name: "Oud Brown",
+    price: 12000,
   },
   {
     id: 2,
-    name: "Apple MacBook Air M2",
-    price: 320000,
-    image: "https://via.placeholder.com/150",
+    name: "Desire",
+    price: 3200,
   },
   {
     id: 3,
-    name: "Sony WH-1000XM5 Headphones",
-    price: 75000,
-    image: "https://via.placeholder.com/150",
+    name: "Janan",
+    price: 7500,
   },
 ];
 
