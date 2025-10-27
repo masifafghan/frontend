@@ -3,66 +3,72 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div style={styles.container}>
-      <header style={styles.hero}>
-        <h1 style={styles.title}>Welcome to Sentiments </h1>
-        <p style={styles.subtitle}>
-          Discover the latest Sentiments, Men's Fragrance , and all kind of Perfum's — all in one place!
-        </p>
-        <Link to="/store" style={styles.button}>
-          Shop Now
-        </Link>
-      </header>
-
-      <section style={styles.features}>
-        <div style={styles.featureBox}>
-          <h3>🚚 Fast Delivery</h3>
-          <p>We deliver your electronics anywhere in Pakistan within 3-5 days.</p>
+    <>
+    <nav className="navbar navbar-expand-sm text-light bg-dark">
+        <div className="container-fluid">
+          <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mb-2 mb-lg-0 m-auto">
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link text-white" to="/store">Store</Link>
+              </li>
+            </ul>
+            <span className="navbar-brand m-auto text-white">Sentiments</span>
+          </div>
         </div>
-        <div style={styles.featureBox}>
-          <h3>💳 Secure Payment</h3>
-          <p>All transactions are fully encrypted for your safety and confidence.</p>
-        </div>
-        <div style={styles.featureBox}>
-          <h3>⭐ Quality Guaranteed</h3>
-          <p>We only sell 100% original and tested products.</p>
+      </nav>
+    <div className="bg-dark">
+      <section className="d-block m-1">
+        <div className="w-100 border border-dark ms-1">
+         <img className="w-100 h-100 rounded" src="\pic\bg1.jpg" alt="Background" />            
         </div>
       </section>
-    </div>
+      <section className="d-flex m-1">
+         <div className="w-50 border border-white ms-1 text-white">
+           <h3>About</h3>
+            <p>
+            Refers to the feelings, opinions, or attitudes that people hold toward a
+            particular topic, person, or issue.
+            </p>
+         </div>
+         <div className="w-50 border border-warning">
+           <img className="w-100 h-100 rounded" src="\pic\bg1.jpg" alt="About" />
+         </div>
+       </section>
+       <section className="d-flex m-1">
+        <div className="w-50 border border-warning ms-1">
+         <img className="w-100 h-100 rounded" src="\pic\bg1.jpg" alt="Gallery" />
+        </div>
+        <div className="w-50 border border-white"></div>
+        </section>
+        <section className="d-flex" id="dev">
+          <h1 className="text-white mx-auto mt-5">Asif</h1>
+            <div className="mx-auto mt-5">
+              <Link className="nav-link text-white" to="/store">Shop</Link>
+              <Link className="nav-link text-white" to="/">About</Link>
+              <Link className="nav-link text-white" to="/">Contact</Link>
+            </div>
+            <div className="w-10 mx-auto mt-5 text-white">
+            <p>
+               Privacy Policy <br />
+               Accessibility <br />
+               Terms & Conditions <br />
+               Refund Policy
+             </p>
+            </div>
+            <div className="w-10 mx-auto mt-5 text-white d-block">
+              <p>0312-7278576</p>
+              <p>Asif@gmail.com</p>
+              <p>Dera Ghazi Khan</p>
+            </div>
+         </section>
+      </div>
+    </>
   );
 }
-
-const styles = {
-  container: { textAlign: "center", padding: "50px" },
-  hero: {
-    backgroundColor: "#111",
-    color: "#fff",
-    padding: "80px 20px",
-    borderRadius: "12px",
-  },
-  title: { fontSize: "2.5rem", marginBottom: "10px" },
-  subtitle: { fontSize: "1.1rem", marginBottom: "30px" },
-  button: {
-    backgroundColor: "#007bff",
-    color: "white",
-    padding: "12px 30px",
-    borderRadius: "8px",
-    textDecoration: "none",
-    fontWeight: "bold",
-  },
-  features: {
-    display: "flex",
-    justifyContent: "space-around",
-    marginTop: "60px",
-    flexWrap: "wrap",
-  },
-  featureBox: {
-    background: "#f7f7f7",
-    padding: "20px",
-    borderRadius: "10px",
-    width: "280px",
-    margin: "10px",
-  },
-};
-
 export default Home;
